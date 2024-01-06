@@ -114,9 +114,9 @@ printf("Ligne 1\n");
 #ifdef Toto
 printf("Ligne 2\n");
 #else
-printf("Ligne 2\n");
-#endif
 printf("Ligne 3\n");
+#endif
+printf("Ligne 4\n");
 ```
 
 ### Exercices 
@@ -127,8 +127,12 @@ printf("Ligne 3\n");
     - minimum de trois expressions
     - minimum en valeur absolue de deux expressions (en utilisant valeur absolue d’une expression et en ne l’utilisant pas)
 
-2. 
-
 ## Partie II : Compilation
 
-Usage classique et organisation du code
+Dans cette partie nous allons compiler notre premier programme C.
+
+1. Créer deux fichiers nommés `main.c` et `file.c`.
+2. Copier le contenur de l'exemple *"Instruction #include"* ci-dessus.
+3. Exécuter la phase de préprocessing et vérifier que le résultat est celui attendu. 
+3. Générer le code assembleur avec l'option `-S`. 
+3. Finalement, exécuter la chaîne de compilation complète dans le but de créer un fichier exécutable nommé `TP1`.  
