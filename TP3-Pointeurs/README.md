@@ -16,23 +16,26 @@ Dans ce TP, on s'intéresse aux conditions et aux boucles en C/C++. Les compéte
     On suppose de plus que l'adresse **0x4000** contient **2**, que l'adresse **0x4010** contient **0xA010**, que l'adresse **0x4020** contient **0xA020**, que l'adresse **0xA010** contient **12**, que l'adresse **0xA020** contient **22**.
 
     Lesquelles parmi les expressions suivantes affectent un pointeur à une variable de type pointeur, ou un entier à une variable de type entier, et pour ces expressions, quel est leur effet sur le contenu de la mémoire.
-    1. p = i
-    1. *p = &i
-    1. &p = q
-    1. p = &q
-    1. p = *&q
-    1. *p = q
-    1. p = *q
-    1. *p = *q
+    1. `p = i`
+    1. `*p = &i`
+    1. `&p = q`
+    1. `p = &q`
+    1. `p = *&q`
+    1. `*p = q`
+    1. `p = *q`
+    1. `*p = *q`
 
-2. Ecrire une fonction `int *max(int a[N], int n)` qui retourne un pointeur sur le plus grand élément du tableau a de longueur n.
+2. Ecrire une fonction `int *max(int a[N], int n)` qui retourne un pointeur sur le plus grand élément du tableau $a$ de longueur $n$.
 
 3. Quel est le contenu du tableau $a$ après l'exécution des instructions suivantes :
     ```c
     #define N 10
     int a[N] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
     int *p = &a[0], *q = &a[N-1], temp;
-    while (p < q) {
+    
+    while (p < q) 
+    {
         temp = *p;
         *p++ = *q;
         *q-- = temp;
