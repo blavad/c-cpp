@@ -1,10 +1,9 @@
 # TP n°3 : Pointeurs
 
-Dans ce TP, on s'intéresse aux conditions et aux boucles en C/C++. Les compétences travaillées durant cette activité sont les suivantes : 
+Dans ce TP, on s'intéresse à la notion de pointeurs en C/C++. Les compétences travaillées durant cette activité sont les suivantes : 
 
-- Ecrire, compiler et exécuter un programme C/C++
-- Ecrire des conditions en C/C++
-- Ecrire des boucles en C/C++
+- Comprendre et utiliser les pointeurs
+- Comprendre et utiliser les pointeurs intelligents
 
 
 ## Partie I : Pointeurs

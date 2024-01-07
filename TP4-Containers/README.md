@@ -1,48 +1,58 @@
-# TP n°3 : Tableaux / Chaines de caractères
+# TP n°4 : Tableaux / Conteneurs STL
 
-Dans ce TP, on s'intéresse aux conditions et aux boucles en C/C++. Les compétences travaillées durant cette activité sont les suivantes : 
+Dans ce TP, on s'intéresse aux tableaux et aux conteneurs STL en C++. Les compétences travaillées durant cette activité sont les suivantes : 
 
-- Ecrire, compiler et exécuter un programme C/C++
-- Ecrire des conditions en C/C++
-- Ecrire des boucles en C/C++
+- Manipuler des tableaux en C/C++
+- Manipuler des vector en C++
+- Manipuler des map en C++
 
 
-## Partie I : Conditions
+## Partie I : Manipuler des tableaux statiques
 
-1. Ecrire un programme qui lit un nombre et affiche '+', '0', '-' selon que le nombre est positif, nul ou négatif.
+1. Ecrire une fonction `sum` qui calcule la somme des éléments d’un tableau.
 
-2. Ecrire un programme qui lit un caractère, détermine s'il s'agit d'une lettre minuscule et le cas
-échéant le convertit en majuscule et l'affiche
+1. Ecrire une procédure `invert` qui inverse un tableau passé en paramètre. 
 
-3. Modifier le programme précédent pour faire l'inverse.
+1. On veut effectuer des traitements sur les notes obtenues par un ensemble d’élèves à un
+examen. Le nombre maximum d’élèves est fixé par la constante `MAXELEVES`. Les notes
+sont mémorisées dans un tableau notes de réels. Ecrire un programme qui :
+    -  saisit le nombre d’élèves dans la variable nbeleves, puis saisit les notes des élèves
+dans le tableau notes,
+    - puis calcule et affiche la moyenne de l’examen,
+    - puis donne le nombre d’élèves ayant obtenu une note supérieure à 10, et affiche les indices de tous les élèves n’ayant pas eu la moyenne (on utilisera une seule boucle pour les 2 traitements)
+    - et enfin, affiche l’indice du premier élève ayant obtenu une note supérieure à 18
+ainsi que sa note.
 
-4. Ecrire un programme qui lit trois valeurs entières (a, b et c) au clavier et qui affiche la plus grande des trois valeurs.
+## Partie II : Manipuler des `vector`
 
-## Partie II : Boucles
+1. Ecrire une fonction `sum` qui calcule la somme des éléments d’un vecteur.
 
-1. Ecrire un programme qui lit un entier n, puis lit n nombres réels et affiche le plus grand de ces réels.
+1. Ecrire une procédure `invert` qui inverse un vecteur passé en paramètre. 
 
-1. Ecrire un programme qui affiche une table de multiplication.
+1. Ecrire une fonction `range` qui renvoit un vecteur avec des valeurs de 0 à n.
 
-1. Ecrire un programme qui calcule et affiche les carrés des n premiers entiers :
-    - d'abord avec une boucle **while**
-    - puis en utilisant une boucle **for**
-    - puis en utilisant une boucle do **while**
+1. Ecrire une procédure `printVector` qui affiche un vecteur passé en paramètre.
 
-1. Ecrire un programme qui lit 2 entiers a et b et affiche les entiers divisibles par 7 entre a et b,
-ainsi que leur nombre.
+1. Ecrire un programme qui :
+    - instancie un vecteur `vec1` contenant les entiers : 11, 40, 18, 5, 56 
+    - ajoute l’élément 12 à la fin du vecteur 
+    - affiche le vecteur (en utilisant `printVector`)
+    - inverse le vecteur (en utilisant `invert`)
+    - afficher la liste
+    - affiche le 1er et le 3ème entier
+    - supprime l'élément 40 et afficher la liste
+    - crée la sous-liste du 3ème au dernier élément 
+    - affiche la sous-liste
 
-1. Ecrire un programme qui lit un entier positif n (redemander la saisie si l’entier saisi n’est pas
-positif) et affiche les nombres consécutifs compris entre n et 2n, à raison de 10 entiers par
-ligne.
+## Partie III : Manipuler des `map`
 
-1. Ecrire un programme qui donne la possibilité à l'utilisateur de choisir parmi les exécutions des exercices 4 et 5. On donnera aussi à l'utilisateur la possibilité de recommencer ou de quitter le programme.
+1. Ecrire une procédure `printMap` qui affiche une map passée en paramètre.
 
-1. Ecrire un programme qui lit une suite d’entiers et compte le nombre de ces entiers qui sont divisibles par 9 (penser à une condition d’arrêt).
-
-1. Ecrire un programme qui permet de calculer N! (factorielle de N).
-
-1. Ecrire un programme qui lit des caractères et s’arrête à la lecture d’un '.' ; ce programme
-compte et affiche le nombre de caractères lus, le nombre de lettres minuscules ainsi que le nombre de chiffres.
-
-    Modifier le programme pour n’autoriser la saisie que de maximum 50 caractères.
+1. On souhaite recenser le nombres de votes pour chaque partie politique aux présidentiels 2040 puis effectuer les actions suivantes:
+    - initialiser une map `votes` (de type `map<string, int>`) avec un nombre de votes égale à 0 et les parties suivants : "UDC", "RDH" et "ENLC" et 
+    - afficher toutes les clés de la map
+    - afficher toutes les valeurs de la map
+    - vérifier que `'ENLC'` est une clé de la map et :
+        - si c'est le cas, lui affecter 60 votes 
+        - sinon afficher un message d'erreur  
+    - ajouter le couple  `clé="DBP"` et `valeur=82`
