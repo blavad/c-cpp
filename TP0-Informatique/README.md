@@ -58,3 +58,7 @@ Une fois dans le terminal, l'utilisateur n'a qu'à écrire au clavier la _comman
 - `dir` (**dir**ectory) : affiche les éléments d'un dossier
 - `cp` (**c**o**p**y) : copie un fichier
 - `del` (**del**ete) : supprimer un fichier ou un dossier
+
+## Référence
+
+Tristan Troussil, Passeport Informatique Télécoms (PIT), 2021, https://github.com/troussil
