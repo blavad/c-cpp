@@ -9,10 +9,10 @@ Le C est un langage de programmation impératif conçu dans les années 1970 pou
 Pour bien apprendre pendant ces travaux pratiques il est conseillé d'avoir les éléments suivants sur sa machine:
 
 - les compilateurs `gcc`, `g++`
-- un accès à terminal utilisant
+- un accès à terminal utilisant (Powershell sous Windows)
 - un éditeur de texte. Il existe des environnements de développements très performants que vous serez amené à utiliser en entreprise. Pourquoi ne pas les utiliser dès à présent ?
   - `Visual Studio Code`, `PyCharm`, `SublimeText`, ...
 
 ## Et ensuite ?
 
-Si votre environnement de travail est près. Vous pouvez lire [le TP n°1 sur la compilation en C](./TP1-Compiler/README.md).
+Si votre environnement de travail est près. Vous pouvez lire [le TP n°0 sur l'informatique](./TP0-Informatique/README.md).
