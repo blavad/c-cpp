@@ -8,8 +8,8 @@ Dans ce TP, on s'intéresse à la compilation et aux instructions du préprocess
 
 ## Partie 0 : Mise en place
 
-- Cloner ce repo : `git clone https://github.com/blavad/c-cpp.git`
-- Ouvrer un terminal à l'emplacement `c-cpp/TP1-Compiler`
+- Créer un dossier `c-cpp`
+- Ouvrir un terminal à l'emplacement `c-cpp`
 
 Ce dossier est le votre pendant tout les TPs. Toutes les manipulations doivent être faites à l'intérieur. Il contient déjà certains fichiers qui seront à lire et/ou compléter durant le TP.
 
