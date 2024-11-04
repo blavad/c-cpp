@@ -26,7 +26,7 @@ Dans ce TP, on s'intéresse à la notion de pointeurs en C/C++. Les compétences
 
 2. Ecrire une fonction `int *max(int a[N], int n)` qui retourne un pointeur sur le plus grand élément du tableau $a$ de longueur $n$.
 
-3. Quel est le contenu du tableau $a$ après l'exécution des instructions suivantes :
+3. (Optionnel) Quel est le contenu du tableau $a$ après l'exécution des instructions suivantes :
 
    ```c
    #define N 10
@@ -42,7 +42,7 @@ Dans ce TP, on s'intéresse à la notion de pointeurs en C/C++. Les compétences
    }
    ```
 
-4. Soit `a` un tableau à une dimension et `p` une variable de type pointeur. On suppose que l'affectation `p = a` vient d'être exécutée.
+4. (Optionnel) Soit `a` un tableau à une dimension et `p` une variable de type pointeur. On suppose que l'affectation `p = a` vient d'être exécutée.
 
    Lesquelles parmi les expressions ci-dessous sont illégales en raison d'incompatibilité de type ?
 
