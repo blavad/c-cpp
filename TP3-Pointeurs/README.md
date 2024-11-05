@@ -26,7 +26,35 @@ Dans ce TP, on s'intéresse à la notion de pointeurs en C/C++. Les compétences
 
 2. Ecrire une fonction `int *max(int a[N], int n)` qui retourne un pointeur sur le plus grand élément du tableau $a$ de longueur $n$.
 
-3. (Optionnel) Quel est le contenu du tableau $a$ après l'exécution des instructions suivantes :
+3. Sans l'exécuter, donner et expliquer la sortie du programme suivant ?
+
+```cpp
+#include <iostream>
+
+int main()
+{
+   int t[3] = {1, 2, 3}, v, *p;
+   p = t;
+   v = 2;
+   std::cout << (v == *p) << std::endl;
+   std::cout << (*(p + 1) == t[1]) << std::endl;
+   p += v;
+   std::cout << (p == t + 2) << std::endl;
+}
+```
+
+4. (Optionnel) Soit `a` un tableau à une dimension et `p` une variable de type pointeur. On suppose que l'affectation `p = a` vient d'être exécutée.
+
+   Lesquelles parmi les expressions ci-dessous sont illégales en raison d'incompatibilité de type ?
+
+   Parmi les expressions légales lesquelles sont vraies ?
+
+   1. `p == a[0]`
+   2. `p == &a[0]`
+   3. `*p == a[0]`
+   4. `p[0] == a[0]`
+
+5. (Optionnel) Quel est le contenu du tableau $a$ après l'exécution des instructions suivantes :
 
    ```c
    #define N 10
@@ -41,14 +69,3 @@ Dans ce TP, on s'intéresse à la notion de pointeurs en C/C++. Les compétences
        *q-- = temp;
    }
    ```
-
-4. (Optionnel) Soit `a` un tableau à une dimension et `p` une variable de type pointeur. On suppose que l'affectation `p = a` vient d'être exécutée.
-
-   Lesquelles parmi les expressions ci-dessous sont illégales en raison d'incompatibilité de type ?
-
-   Parmi les expressions légales lesquelles sont vraies ?
-
-   1. `p == a[0]`
-   1. `p == &a[0]`
-   1. `*p == a[0]`
-   1. `p[0] == a[0]`
