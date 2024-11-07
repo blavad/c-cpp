@@ -11,7 +11,7 @@ On considère que les labyrinthes sont stockés dans des fichiers (voir l'exempl
 - _I_ : position initiale du joueur
 - _S_ : sortie du labyrinthe
 - _#_ : un mur
-- _P_ : un passage autorisé
+- _-_ : un passage autorisé
 
 ### Portée
 
