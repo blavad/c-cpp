@@ -105,7 +105,7 @@ _Exemples d'exécutions valides_ :
 ./labyrinthe monLabyrinthe2.txt 4
 ```
 
-## Notation
+## Notation et rendu
 
 La notation portera uniquement sur le code et l'exécution du projet.
 
@@ -117,3 +117,7 @@ Faites attention notamment aux points suivants:
 - le code est commenté quand cela est nécessaire
 
 > ⚠️ **Veuillez impérativement écrire en commentaire dans le fichier principal (main) la ou les lignes nécessaires pour compiler votre projet**
+
+Concernant le rendu :
+
+> ⚠️ **Le rendu doit se faire sur classroom sous forme d'un seul et unique dossier compressé (.zip ou .tar)**
